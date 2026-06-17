@@ -13,29 +13,42 @@
 </head>
 <body>
 
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">Rakesh Lakshmanan</span>
+    <div class="nav-links">
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
   <!-- HERO -->
   <div class="topcontainer">
-    <img class="top-cloud" src="images/cloud.png" alt="">
     <div class="hero-content">
       <div class="hero-badge">Open to Data Engineering roles</div>
       <h1 class="name">I'm Rakesh.</h1>
       <h2 class="hero-sub">Data Engineer &amp; SQL Specialist</h2>
-      <p class="hero-desc">4+ years in technical support and data operations · SQL · Snowflake · Azure · Chennai, India</p>
+      <p class="hero-desc">4+ years in technical support and data operations &nbsp;·&nbsp; SQL &nbsp;·&nbsp; Snowflake &nbsp;·&nbsp; Azure &nbsp;·&nbsp; Chennai, India</p>
       <div class="hero-actions">
         <a class="btn-primary" href="#contact">Get in touch</a>
         <a class="btn-outline" href="#experience">View experience</a>
       </div>
     </div>
-    <img class="bottom-cloud" src="images/cloud.png" alt="">
-    <img class="mountain-img" src="images/mountain.png" alt="">
+    <!-- small decorative clouds only, no mountain -->
+    <img class="cloud cloud-left" src="images/cloud.png" alt="">
+    <img class="cloud cloud-right" src="images/cloud.png" alt="">
   </div>
 
-  <!-- ABOUT -->
+  <!-- MAIN -->
   <div class="middle-container">
+
+    <!-- ABOUT -->
     <div class="profile" id="about">
       <img class="rakesh-img" src="images/rakesh.png" alt="Rakesh Lakshmanan">
       <h2>Hello.</h2>
-      <p class="intro">I'm Rakesh, a technically driven support professional transitioning into Data Engineering. With 4+ years of hands-on SQL, Snowflake, and Azure experience, I build reliable data solutions and love solving complex data problems.</p>
+      <p class="intro">I'm Rakesh — a technically driven SQL and data professional transitioning into Data Engineering. With 4+ years of hands-on experience in SQL, Snowflake, SSIS, and Azure, I love turning messy data into reliable solutions.</p>
     </div>
 
     <hr>
@@ -43,7 +56,7 @@
     <!-- STATS -->
     <div class="stats-row">
       <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Years experience</span></div>
-      <div class="stat"><span class="stat-num">40%</span><span class="stat-label">Error reduction</span></div>
+      <div class="stat"><span class="stat-num">40%</span><span class="stat-label">Error reduction at JRK</span></div>
       <div class="stat"><span class="stat-num">5</span><span class="stat-label">Team members led</span></div>
       <div class="stat"><span class="stat-num">AZ-900</span><span class="stat-label">Azure certified</span></div>
     </div>
@@ -57,6 +70,7 @@
         <div class="skill-chip"><i class="ti ti-database"></i> MS SQL / MySQL</div>
         <div class="skill-chip"><i class="ti ti-snowflake"></i> Snowflake</div>
         <div class="skill-chip"><i class="ti ti-cloud"></i> Microsoft Azure</div>
+        <div class="skill-chip"><i class="ti ti-transfer"></i> SSIS</div>
         <div class="skill-chip"><i class="ti ti-coffee"></i> Java</div>
         <div class="skill-chip"><i class="ti ti-git-branch"></i> Git</div>
         <div class="skill-chip"><i class="ti ti-table"></i> Excel</div>
@@ -75,10 +89,7 @@
 
       <div class="timeline">
         <div class="timeline-item">
-          <div class="tl-left">
-            <div class="tl-dot"></div>
-            <div class="tl-line"></div>
-          </div>
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
           <div class="tl-body">
             <div class="tl-meta">
               <span class="tl-title">Senior Analyst – Technical Support</span>
@@ -87,7 +98,7 @@
             <div class="tl-company">Accenture · Chennai</div>
             <ul class="tl-bullets">
               <li>Handled SQL and Snowflake queries to resolve customer data issues, including complex tax data offset and re-upload workflows</li>
-              <li>Built an internal Salesforce dashboard to track and monitor team case volumes and resolution status</li>
+              <li>Built an internal Salesforce dashboard to track team case volumes, resolution status, and SLA performance</li>
               <li>Led a team of 5 analysts and associates in the absence of the team lead, ensuring SLA adherence</li>
               <li>Collaborated with team lead on escalations, root cause analysis, and process improvements</li>
             </ul>
@@ -95,10 +106,7 @@
         </div>
 
         <div class="timeline-item">
-          <div class="tl-left">
-            <div class="tl-dot"></div>
-            <div class="tl-line"></div>
-          </div>
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
           <div class="tl-body">
             <div class="tl-meta">
               <span class="tl-title">Technical Support – SQL</span>
@@ -107,9 +115,10 @@
             <div class="tl-company">JRK Consulting Services · Chennai</div>
             <ul class="tl-bullets">
               <li>Reduced software problems and errors by 40% through proactive debugging and root cause analysis</li>
+              <li>Designed and implemented SSIS packages to import and transform data from Excel and JSON files into SQL Server</li>
               <li>Developed custom SQL reports for gold retail clients to track specific customer sales patterns</li>
               <li>Improved print query performance using SQL temporary tables, significantly reducing execution time</li>
-              <li>Managed support tickets end-to-end; wrote and maintained software documentation and specifications</li>
+              <li>Managed support tickets end-to-end; wrote and maintained software documentation</li>
             </ul>
           </div>
         </div>
@@ -123,9 +132,14 @@
       <h2>Projects.</h2>
       <div class="projects-grid">
         <div class="project-card">
+          <i class="ti ti-transfer project-icon"></i>
+          <h3>SSIS Data Import Pipelines</h3>
+          <p>Built SSIS packages to automate import of data from Excel and JSON files into SQL Server — applied at JRK Consulting and in personal projects.</p>
+        </div>
+        <div class="project-card">
           <i class="ti ti-database-export project-icon"></i>
           <h3>SQL DB Backup Tool</h3>
-          <p>Batch file utility enabling non-SQL users to trigger database backups with a double-click — removing dependency on SQL access.</p>
+          <p>Batch file utility enabling non-SQL users to trigger database backups with a double-click, removing dependency on SQL access.</p>
         </div>
         <div class="project-card">
           <i class="ti ti-report-analytics project-icon"></i>
@@ -166,23 +180,19 @@
           <i class="ti ti-brand-linkedin"></i>
           <div><span class="c-label">LinkedIn</span><span class="c-value">rakeshlakshmanan</span></div>
         </a>
-        <a class="contact-card" href="https://github.com/rakesh1881" target="_blank">
-          <i class="ti ti-brand-github"></i>
-          <div><span class="c-label">GitHub</span><span class="c-value">rakesh1881</span></div>
-        </a>
-        <div class="contact-card">
+        <a class="contact-card" href="tel:+919710352925">
           <i class="ti ti-phone"></i>
           <div><span class="c-label">Phone</span><span class="c-value">+91 97103 52925</span></div>
-        </div>
+        </a>
       </div>
     </div>
+
   </div>
 
   <!-- FOOTER -->
   <div class="bottomcontainer">
     <a href="https://linkedin.com/in/rakeshlakshmanan" target="_blank">LinkedIn</a>
-    <a href="https://github.com/rakesh1881" target="_blank">GitHub</a>
-    <a href="https://rakesh1881.github.io/CV/">Website</a>
+    <a href="mailto:rakeshlakshmanan18@gmail.com">Email</a>
     <p class="footer">© Rakesh Lakshmanan · Chennai, India</p>
   </div>
 
